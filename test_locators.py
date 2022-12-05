@@ -23,7 +23,7 @@ class ElementsLocators:
     REGISTRATION_FORM_INPUT_PASSWORD = By.NAME, "Пароль" #поле ввода пароля страница «Регистрация»
 
     CONSTRUCTOR_SECTION_BUNS = By.XPATH, '//*[contains(@class, "tab_tab__")][1]' # первый элемент конструктора «Булки»
-    CONSTRUCTOR_SECTION_SAUCES = By.XPATH, './/*[contains(@class, "tab_tab__")][2]' #второй элемент конструктора «Соусы»
+    CONSTRUCTOR_SECTION_SAUCES = By.XPATH, '//*[contains(@class, "tab_tab__")][2]' #второй элемент конструктора «Соусы»
     CONSTRUCTOR_SECTION_FILLINGS = By.XPATH, '//*[contains(@class, "tab_tab__")][3]' #третий элемент конструктора «Начинки»
 
 

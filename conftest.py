@@ -10,8 +10,7 @@ from test_locators import ElementsLocators, UrlLocators
 @pytest.fixture
 def create_driver_instance():
     driver = webdriver.Chrome()
-    # полноэкранный режим
-    driver.maximize_window()
+    driver.set_window_size(1280, 1024)
     return driver
 
 
@@ -27,7 +26,7 @@ def open_registration_form(create_driver_instance):
     account_link.click()
     registration_link = driver.find_element(*ElementsLocators.LOGIN_FORM_REGISTRATION_LINK)
     registration_link.click()
-    #Найти поля имя, email, пароль
+    # Найти поля имя, email, пароль
     input_name = driver.find_element(*ElementsLocators.REGISTRATION_FORM_INPUT_NAME)
     input_email = driver.find_element(*ElementsLocators.REGISTRATION_FORM_INPUT_EMAIL)
     input_password = driver.find_element(*ElementsLocators.REGISTRATION_FORM_INPUT_PASSWORD)
